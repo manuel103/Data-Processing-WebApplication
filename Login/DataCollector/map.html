@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Map</title>
+	<style>
+		#map{
+			height: 550px;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<h1>Houses Assigned</h1>
+<div id="map"></div>
+
+	<script >
+		function initMap(){
+			var options = {
+				zoom:8,
+				center:{lat:-1.2921,lng:36.8219}
+			}
+			var map = new google.maps.Map(document.getElementById('map'), options);
+			/*
+
+			var marker = new google.maps.Marker({
+				position:{lat:-1.3224,lng:36.8196},
+				map:map,
+				icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+			});
+			var infoWindow = new google.maps.InfoWindow({
+				content:'<h1>Lynn MA</h1'
+			});
+			marker.addListener('click', function(){
+				infoWindow.open(map,marker);
+			});
+			*/
+			addMarker({coords:{lat:-1.3224,lng:36.8196},
+				iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+		});
+			addMarker({coords:{lat:-1.1748,lng:36.8304}});
+			addMarker({coords:{lat:0.0074,lng:37.0722}});
+			addMarker({coords:{lat:0.0084,lng:35.0722}});
+			addMarker({coords:{lat:0.0094,lng:38.0722}});
+			addMarker({coords:{lat:-1.359227,lng:36.937984}});
+			addMarker({coords:{lat:-0.785561,lng:35.339138}});
+			addMarker({coords:{lat:-1.291514,lng:36.874260}});
+			addMarker({coords:{lat:-4.092902,lng:39.661446}});
+			addMarker({coords:{lat:-1.359227,lng:36.937984}});
+
+			function addMarker(props){
+				var marker = new google.maps.Marker({
+				position:props.coords,
+				map:map,
+				//icon: props.iconImage
+			});
+				if(props.iconImage){
+					marker.setIcon(props.iconImage);
+
+				}
+			}
+
+		}
+	</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJV4vRJXeYwu_odJqqqtD75Zhsyb5-iVQ&callback=initMap">
+    </script>
+</body>
+</html>

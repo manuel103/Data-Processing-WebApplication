@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link href="Login.css" type="text/css" rel="stylesheet">
+	<link rel="icon" href="logo.jpg">
+	<script src="jquery-3.3.1.js"></script>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="logo.jpg">
+  <link rel="stylesheet" href="fontawesome.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />	
+
+  <link rel="stylesheet" type="text/css" href="DataCollectorForm.html" id="user-div">
+
+</head>
+<body>
+<div class="background">
+  <div class="pageLayout">
+    <div class="login">
+      <div class="PlandrIcon"> 
+				<h2 style="color: white;font-size: 15px">User</h2><!--This is the tally icon-->
+      	<svg class="line1" viewBox="0 0 10 10" >
+      		<path d="M60 60 60,110 50" /> 
+      	</svg>
+      	
+      	<svg class="line2" viewBox="0 0 10 10">
+      		<path d="M73 50 73,100 257z" /> 
+      	</svg>
+
+      	<svg class="line3" viewBox="0 0 10 10">
+      		<path d="M86 40 86,90 257z" /> 
+      	</svg>
+
+      	<svg class="line4" viewBox="0 0 10 10">
+      		<path d="M99 30 99,80 257z" /> 
+      	</svg>
+      	
+      	<svg class="line5" viewBox="0 0 10 10">
+      		<path d="M50 60 109,29 257z" /> 
+      	</svg>
+      </div>
+  
+      <svg viewBox="260 130 30 30" class="plandrsvg">
+      	<path id="plandr" stroke-dasharray="1200 1000" d="  
+
+      	M366.7,224.5L354,255.9c-1.8,4.3-4.3,6.5-7.7,6.5c-1.3,0-2.4-0.4-3.3-1.3c-0.9-0.9-1.4-1.9-1.4-3.1
+      	c0-1,0.4-2.5,1.2-4.6l23.5-58c1.2-2.9,3.3-4.4,6.3-4.4c2.1,0,3.7,1,4.9,2.9c2.3-2.4,5.1-3.6,8.3-3.6c3.4,0,6.2,1.3,8.3,3.9
+      	s3.1,6,3.1,10.2c0,8-2.5,14.5-7.5,19.6c-1.6,1.7-3.3,2.8-5,3.4c-1.7,0.6-4.1,0.9-7.2,0.9c-3.3,0-5.6-0.2-6.9-0.7
+      	C369.4,227.2,368.1,226.2,366.7,224.5z M370.7,214.6c0.8,1.4,1.6,2.4,2.3,2.8c0.7,0.4,1.9,0.6,3.5,0.6c2.3,0,4.1-0.9,5.4-2.6
+      	c2.6-3.5,4-7.1,4-10.7c0-3.2-1.5-4.7-4.5-4.7c-3.3,0-5.6,1.9-7.1,5.7c-0.2,0.4-0.3,0.8-0.4,1.1L370.7,214.6z
+
+      	M412.9,217.7h5.1c4.1,0,6.2,1.4,6.2,4.3c0,2-0.7,3.5-2.2,4.6c-1.4,1.1-3.5,1.7-6.1,1.7h-8.8
+      	c-2.4,0-4.3-0.6-5.7-1.7c-1.4-1.1-2.1-2.7-2.1-4.6c0-1,0.5-2.7,1.4-5l19.7-48.5l0.5-1.3c1.5-3.6,3.9-5.5,7.2-5.5
+      	c1.4,0,2.5,0.5,3.5,1.4c1,0.9,1.4,2,1.4,3.3c0,1-0.2,2.1-0.7,3.3l-0.5,1.3L412.9,217.7z
+
+      	M459.7,217.7h5.4c4.1,0,6.2,1.4,6.2,4.3c0,2-0.7,3.5-2.2,4.7s-3.5,1.7-6.1,1.7h-6.3c-2.8,0-4.7-1.1-5.7-3.3
+      	c-2.4,2.2-4.8,3.3-7.1,3.3h-5.6c-3.6,0-6.5-1.3-8.7-3.8c-2.2-2.6-3.3-5.9-3.3-10c0-6.3,2.2-11.8,6.5-16.8c4.3-4.9,9.2-7.4,14.6-7.4
+      	c4.2,0,7.2,1.4,9.1,4.3c1.6-2.4,3.8-3.7,6.4-3.7c1.4,0,2.6,0.5,3.6,1.4c1,0.9,1.4,2,1.4,3.4c0,0.9-0.3,2-0.8,3.3l-0.5,1.3
+      	L459.7,217.7z M442,217.9h1.2c2.7,0,4.4-1.1,5.3-3.3l3.4-8.4c0.5-1.1,0.7-2,0.7-2.8c0-0.9-0.4-1.6-1.3-2.3c-0.9-0.7-1.9-1-3.1-1
+      	c-2.4,0-4.7,1.4-6.9,4.2c-2.2,2.8-3.4,5.6-3.4,8.6C437.9,216.3,439.3,217.9,442,217.9z
+
+      	M509.3,217.7h5.9c4.1,0,6.2,1.4,6.2,4.3c0,2-0.7,3.5-2.2,4.6c-1.5,1.1-3.5,1.7-6.1,1.7h-10.2
+      	c-2,0-3.7-0.6-5-1.8c-1.4-1.2-2-2.7-2-4.5c0-1.1,0.5-2.8,1.4-5l4.3-10.6c0.5-1.1,0.7-2,0.7-2.7c0-0.8-0.3-1.4-1-2
+      	c-0.7-0.6-1.5-0.8-2.6-0.8c-3.4,0-6.1,2.5-8.1,7.6l-5.8,14.2c-1.7,4.3-4.3,6.4-7.7,6.4c-1.4,0-2.6-0.4-3.6-1.3s-1.5-1.9-1.5-3.1
+      	c0-0.9,0.3-2,0.8-3.3l0.5-1.3l9.9-24.3c1.3-3.2,3.4-4.7,6.5-4.7c2.5,0,4.3,1.1,5.4,3.3c3.5-2.7,6.8-4,10-4c3.1,0,5.6,0.9,7.6,2.6
+      	c2,1.8,3,4,3,6.7c0,1.5-0.4,3.1-1.1,4.9L509.3,217.7z
+
+      	M556.7,217.7h5.6c4.1,0,6.2,1.4,6.2,4.3c0,2-0.7,3.5-2.2,4.6c-1.5,1.1-3.5,1.7-6.1,1.7h-6.6
+      	c-2.5,0-4.4-1-5.6-3.1c-2.1,2.1-4.3,3.1-6.7,3.1h-6.2c-3.6,0-6.5-1.2-8.7-3.7c-2.2-2.5-3.2-5.8-3.2-9.9c0-6.3,2.1-11.9,6.4-16.9
+      	c4.3-5,9.1-7.5,14.4-7.5c3.9,0,7.1,1.4,9.4,4.2l10.9-26.7c1.9-4.6,4.4-6.8,7.8-6.8c1.4,0,2.6,0.4,3.6,1.3c1,0.9,1.5,2,1.5,3.3
+      	c0,1-0.2,2.1-0.7,3.4l-0.6,1.3L556.7,217.7z M538.8,217.9h1.9c2.2,0,3.7-0.9,4.4-2.7l3.7-9c0.5-1.1,0.7-2,0.7-2.5
+      	c0-1-0.4-1.8-1.2-2.5s-1.9-1-3.1-1c-2.5,0-4.9,1.4-7.1,4.2s-3.3,5.9-3.3,9.2C534.7,216.5,536.1,217.9,538.8,217.9z
+
+      	M643.4,200.8l10.3,24.5c1.3,3.2,3.1,4.7,5.2,4.7l2,0h20.4c4.5,0,6.7,1.5,6.7,4.6c0,2.2-0.8,4-2.3,5.2
+      	c-1.6,1.2-3.8,1.9-6.7,1.9h-22.5c-6.2,0-10.5-2.9-12.9-8.8l-14.1-34l-6.5,16.1c-3.1,7.7-5.3,12.9-6.7,15.6s-2.8,5.2-4.6,7.5
+      	c-6.2,8.4-14,12.6-23.5,12.6c-6.9,0-12.4-2.1-16.7-6.4c-4.3-4.3-6.4-9.9-6.4-16.9c0-9.1,3.4-17.1,10.1-24c3.6-3.7,8.1-6.6,13.6-8.9
+      	c5.4-2.3,10.8-3.4,16.2-3.4c2.5,0,4.6,0.6,6.2,1.7c1.6,1.2,2.4,2.7,2.4,4.5c0,2-0.8,3.6-2.5,4.8c-1,0.7-2.9,1.2-5.7,1.5
+      	c-6.5,0.6-11.7,2.1-15.7,4.4c-3.3,2-5.9,4.6-7.9,7.8c-1.9,3.2-2.9,6.5-2.9,10c0,3.7,0.9,6.6,2.8,8.7c1.9,2.1,4.4,3.2,7.6,3.2
+      	c4,0,7.4-1.7,10.3-5c2.9-3.4,6.1-9.3,9.6-17.9l16.9-41.7h-5c-4.5,0-6.7-1.5-6.7-4.6c0-2.2,0.8-4,2.3-5.2s3.8-1.8,6.6-1.8h16.2
+      	c4.2,0,7.3,0.2,9.3,0.7c2,0.5,3.9,1.5,5.7,3c3.8,3.2,5.7,7.6,5.7,13.3c0,5.2-1.5,9.8-4.6,13.9S648.4,199.4,643.4,200.8z
+      	M632.4,191.7l1.4-0.1c3.7-0.2,6.5-0.9,8.3-2.1c3.5-2.3,5.3-5.4,5.3-9.3c0-4.5-2.1-6.7-6.4-6.7h-1.1L632.4,191.7z"/>
+			</svg>
+
+
+
+
+
+      <!-- <form name="loginSheet" onsubmit="return !!( validateLogin())"> -->
+
+      <div class="login__form">
+
+        <div class="login__row">
+          <svg class="cartoonIcons name svg-icon" viewBox="0 0 20 20">
+            <path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8" />  <!--The animated username cartoon-->
+          </svg>
+          <input type="Email" class="login__input name" placeholder="Email" id="email_field"/>
+        </div>
+
+        <div class="login__row">
+          <svg class="cartoonIcons pass svg-icon" viewBox="0 0 20 20">
+            <path d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0" />
+          </svg>
+          <input type="password" class="login__input pass" placeholder="Password" id="password_field"/>
+        </div>
+				<input type="submit" class="signIn  hvr-bubble" value="Sign In" onClick="login()" ></button>
+        
+     </div>
+    </div>
+    </form>
+
+
+		<!--This is for including firebase.js-->
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAPGKQJCpLiSXz5jRyOmTam8bl5kiid1cg",
+    authDomain: "plandr-01.firebaseapp.com",
+    databaseURL: "https://plandr-01.firebaseio.com",
+    projectId: "plandr-01",
+    storageBucket: "plandr-01.appspot.com",
+    messagingSenderId: "466634078055"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script src="Login1.js"></script>
+
+</body>
+
+<!-- <script type="text/javascript" src="Login.js"></script>  -->
+</html>
